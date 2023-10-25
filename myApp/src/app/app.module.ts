@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { CustomUppercasePipe } from './pipe/custom-uppercase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     // ClientListPage,
-    BindingPageComponent
+    BindingPageComponent,
+    CustomUppercasePipe
   ],
   imports: [
     BrowserModule,
