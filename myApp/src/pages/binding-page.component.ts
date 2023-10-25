@@ -6,8 +6,17 @@ import { Component } from "@angular/core";
     selector: 'app-binding',
     template: `
         <h1>Imgem Angular</h1>
-        <img [src]="imagem" [style]="{width: width}"/>
-        <div class="alert" [class]="{sucess: sucesso}" >Alerta!</div>
+
+        <img [src]="imagem" [style.width.px]=" width"/>
+        <br>
+        <img [src]="imagem" [style]="{width: width2, height: height2}"/>
+
+        <div
+          class="alert"
+          [class]="{sucess: sucesso}"
+          [style.background-color]="backgroundColor"
+          >Alerta!</div>
+
         <button (click)="enviarDados()">Enviar</button>
 
       `,
@@ -29,12 +38,20 @@ import { Component } from "@angular/core";
 
 export class BindingPageComponent {
 
-  width = "300px";
+  width = 150;
+
+  width2 = "50px";
+  height2= "50px";
+
   imagem = "https://angular.io/assets/images/logos/angular/angular.svg";
+
+  backgroundColor = "rgba(255,25,255)"
 
   sucesso = true;
 
   enviarDados() {
     this.sucesso = !this.sucesso
+    this.backgroundColor = this.sucesso? "rgba(255,25,255)" : "rgba(255,252,25)"
+
   }
 }
