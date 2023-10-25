@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CustomUppercasePipe } from './pipe/custom-uppercase.pipe';
+import { ClientService } from 'src/services/client.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CustomUppercasePipe } from './pipe/custom-uppercase.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
