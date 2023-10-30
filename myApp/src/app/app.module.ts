@@ -12,6 +12,7 @@ import { Filho2Component } from 'src/pages/filho2-page.component';
 import { PaiPageComponent } from 'src/pages/pai.component';
 import { ClientListPage } from 'src/pages/client-list-page.component';
 import { LoginComponent } from 'src/pages/login-page.component';
+import { ClienteDatalhePageComponet } from 'src/pages/cliente-datalhe-page.componet';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { LoginComponent } from 'src/pages/login-page.component';
     Filho1Component,
     Filho2Component,
     ClientListPage,
-    LoginComponent
+    LoginComponent,
+    ClienteDatalhePageComponet
+
   ],
   imports: [
     BrowserModule,

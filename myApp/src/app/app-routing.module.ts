@@ -6,6 +6,7 @@ import { Filho2Component } from 'src/pages/filho2-page.component';
 import { PaiPageComponent } from 'src/pages/pai.component';
 import { UserGuard } from './guards/user.guard';
 import { LoginComponent } from 'src/pages/login-page.component';
+import { ClienteDatalhePageComponet } from 'src/pages/cliente-datalhe-page.componet';
 
 const routes: Routes = [
   {
@@ -20,7 +21,8 @@ const routes: Routes = [
       { path: "filho2", component: Filho2Component }
     ]
   },
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'client/detalhe/:id', component: ClienteDatalhePageComponet}
 ];
 
 @NgModule({

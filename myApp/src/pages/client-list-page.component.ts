@@ -15,7 +15,22 @@ export class ClientListPage{
   itema = ['teste']
   teste = 'teste'
 
-  clients = ['Clients 1', 'Clients 2']
+  clients = [
+    {
+      id: 1,
+      nome: '<NAME>',
+      cpf: '123.456.789-00',
+      email: '<EMAIL>',
+      senha: '<PASSWORD>'
+    },
+    {
+      id: 2,
+      nome: '<NAME2>',
+      cpf: '123.456.789-00',
+      email: '<EMAIL2>',
+      senha: '<PASSWORD2>'
+    }
+  ]
 
 
 }
